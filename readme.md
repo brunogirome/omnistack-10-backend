@@ -1,6 +1,6 @@
 # SEMANA HOMEM STACK 10
 
-[LINK DO VÍDEO!]<https://youtu.be/tqdw5KVx4ps>
+[LINK DO VÍDEO!](https://youtu.be/tqdw5KVx4ps)
 
 ## Express
 
