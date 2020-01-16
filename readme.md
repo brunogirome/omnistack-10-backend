@@ -88,3 +88,9 @@ E dentro da programação, fica:
 ```
 
 Onde o `trim()` tira o espaço do começo e do fim... Tu já sabe como funciona, né. 😆
+
+## Misc
+
+- **Conceito DRY:** *Dont Repeat Yourself*, que te incentiva a não copiar e colar código, já que copiar e colar código *quase* sempre é errado. 😝
+
+- [Operadores de busca do Mongo](https://docs.mongodb.com/manual/reference/operator/query/)

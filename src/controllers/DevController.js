@@ -13,7 +13,7 @@ module.exports = {
 
             const { name = login, avatar_url, bio } = apiRes.data
 
-            const techsArray = techs.split(',').map(tech => tech.trim())
+            const techsArray = require('./utils/parseStringAsArray')(techs)
 
             const location = {
                 type: 'Point',
