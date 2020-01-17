@@ -11,7 +11,11 @@ module.exports = {
         if (!dev) {
             const apiRes = await axios.get(`https://api.github.com/users/${github_username}`)
 
-            const { name = login, avatar_url, bio } = apiRes.data
+            let { name = login, avatar_url, bio } = apiRes.data
+
+            if (name == null) {
+                name = github_username
+            }
 
             const techsArray = require('./utils/parseStringAsArray')(techs)
 
