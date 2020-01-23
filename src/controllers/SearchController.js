@@ -4,7 +4,7 @@ module.exports = {
     async index(req, res) {
         const { latitude, longitude, techs } = req.query
 
-        const techsArray = require('./utils/parseStringAsArray')(techs)
+        const techsArray = require('../utils/parseStringAsArray')(techs)
 
         const devs = await Dev.find({
             techs: {
@@ -15,9 +15,9 @@ module.exports = {
                     $geometry: {
                         type: 'Point',
                         coordinates: [longitude, latitude]
-                    }
-                },
-                $maxDistance: 10000
+                    },
+                    $maxDistance: 10000
+                }
             }
         })
 

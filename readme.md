@@ -94,3 +94,25 @@ Onde o `trim()` tira o espaço do começo e do fim... Tu já sabe como funciona,
 - **Conceito DRY:** *Dont Repeat Yourself*, que te incentiva a não copiar e colar código, já que copiar e colar código *quase* sempre é errado. 😝
 
 - [Operadores de busca do Mongo](https://docs.mongodb.com/manual/reference/operator/query/)
+
+- **axios:** lib que torna a api pública para acesso externo.
+
+## Funcionalidades avançadas (Último vídeo)
+
+- No mundo das requisições HTTP, não é possível o backend mandar informações para o frontend sem uma requisção preliminar, ou seja, a iniciativa sempre tem que ser do frontend na troca de informações.
+
+- Pra solucuionar esse problema, é necessário utilizar o **protocolo WEBSTOCKET!** A ferramenta utilizada na api foi o `socket.io`:
+
+```bash
+    yarn add socket.io
+```
+
+- No frontend, é instalado a dependencia `socket.io-client`:
+
+```bash
+    yarn add socket.io-client
+```
+
+- O arquivo `src/utils/calculateDistatnce.js` usa uma fórmula chamada *fórmula de haversine*, que calcula a distância entre dois pontos. Em um momento nerde futuro, tu pode sentar pra estudar essa merda. :)
+
+- Método `array.some(params)` do javascript retorna `true` caso pelo o menos 1 item do vetor cumprir o parâmetros.
